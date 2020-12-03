@@ -1,0 +1,15 @@
+/* font-family: 'Nerko One', cursive; */
+h1 {
+  font-family: "Nerko One", cursive;
+}
+
+/* テーブルのCSS */
+.table th, .table td{
+  border: solid 1px;
+  padding: 1px 15px;
+}
+
+/* body { */
+  /* background-color: red; */
+/* } */
+/*  */
