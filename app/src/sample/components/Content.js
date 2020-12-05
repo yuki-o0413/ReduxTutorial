@@ -8,19 +8,6 @@ export default function Content(props) {
     const names = [];
     const pvs = [];
 
-    // this.state = {value: ''};
-
-    // this.handleChange = this.handleChange.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
-
-    // handleChange(event) {
-    //     this.setState({value: event.target.value});
-    // }
-    // handleSubmit(event) {
-    //     alert('A name was submitted: ' + this.state.value);
-    //     event.preventDefault();
-    // }
-
     const reducer = () => {
         console.log("reducer has been called.");
     }
@@ -45,7 +32,7 @@ export default function Content(props) {
     const tbody =  ids.map((id,index)=>{
         return(
             <tr key={index}>
-                <td>{id}</td>{ names[index] }<td>{pvs[index]}</td>
+                <td>{id}</td><td>{ names[index] }</td><td>{pvs[index]}</td>
             </tr>
         );
     });
