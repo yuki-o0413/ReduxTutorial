@@ -21,7 +21,7 @@ class App extends Component {
     render() {
         console.log('App.render:', this.props);
 
-        const data1 = "AAAAAAAAAAAAAAAAAAAAAAA";
+        const data1 = "AAAA";
         const data2 = "data2";
 
 
@@ -39,7 +39,7 @@ class App extends Component {
                         <h1>{ja}</h1>
                     </div>
                     <div className="col-5">
-                        <p>testtesttest tttttttest!</p>
+                        <p>test</p>
                     </div>
                 </div>
                 <Top data1={data1} />
