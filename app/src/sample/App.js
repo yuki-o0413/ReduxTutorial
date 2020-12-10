@@ -29,7 +29,7 @@ class App extends Component {
 
 
         const contentData = ({data2}) => ({data2})
-        const ja = "*****Japan!";
+        const ja = "Japan!";
         return (
             <div className="content">
                 <Header />
@@ -52,6 +52,7 @@ class App extends Component {
                 <br />
                 <br />
                 <br />
+                <Footer />
             </div>
         );
     }

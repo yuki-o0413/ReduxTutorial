@@ -9,6 +9,17 @@ h1 {
   padding: 1px 15px;
 }
 
+/*AsideのCSS*/
+._bl1ufs {
+  color: inherit !important;
+  display: inline-block !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  white-space: nowrap !important;
+}
+
+
+
 /* body { */
   /* background-color: red; */
 /* } */
