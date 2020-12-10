@@ -30,7 +30,7 @@ export default function Top(props) {
                         <div className="_c5qlo1f">探す</div>
                         <div className="_iglww7">ホストになる</div>
                         <picture>
-                            <img className="_dae4t6" src="https://a0.muscache.com/im/pictures/c8dd7889-d579-49c7-9650-24ff71a82190.jpg" width="711" />
+                            <img className="_dae4t6" src="https://a0.muscache.com/im/pictures/c8dd7889-d579-49c7-9650-24ff71a82190.jpg" width={1000} />
                         </picture>
                     </div>
                 </div>
