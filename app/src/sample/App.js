@@ -10,44 +10,46 @@ class App extends Component {
     constructor(props) {
         super(props);
     }
-    componentDidMount() {
-        (async () => {
-            const test = "test"
 
-            this.props.didMnt(test);
-        })();
+    // formId
+    onChangeId = (e) => {
+        console.log(e.target.value)
+        this.props.updateFormId(e.target.value);
+    }
+    // forName
+    onChangeName = (e) => {
+        console.log(e.target.value)
+        this.props.updateFormName(e.target.value);
+    }
+    // clickSaveButton
+    onSaveItem = () => {
+        console.log(this.props)
+        console.log("SAVE_ID: ",this.props.id);
+        console.log("SAVE_NAME: ",this.props.name);
     }
 
     render() {
+        const formItem = this.props
+        // formEvent
+		const contentHandler = ({onChangeId, onChangeName, onSaveItem}) => ({ onChangeId, onChangeName, onSaveItem })
         console.log('App.render:', this.props);
 
-        const data1 = "AAAA";
-        const data2 = "data2";
-
-
-        const topData = ({data1}) => ({data1})
-
-
-        const contentData = ({data2}) => ({data2})
-        const ja = "Japan!";
         return (
             <div className="content">
                 <Header />
                     sample site
-                <div className="row">
-                    <div className="col-3">
-                        <h1>{ja}</h1>
-                    </div>
+                {/* <div className="row">
+
                     <div className="col-5">
                         <p>test</p>
                     </div>
-                </div>
-                <Top data1={data1} />
+                </div> */}
+                <Top />
                 <br />
                 <br />
                 <br />
                 <div className="container">
-                    <Content {...contentData(this.props)} />
+                    <Content formItem={formItem} {...contentHandler(this)} />
                 </div>
                 <br />
                 <br />

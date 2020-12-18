@@ -13,13 +13,13 @@ export default function Top(props) {
                         <button className="_b2fxuo" type="button">
                             <div className="_1g5ss3l" id="littleSearchLabel">検索をはじめる</div>
                         </button>
-                        <label for="search-block-tab-false-STAYS" className="_3hmsj">
+                        <label htmlFor="search-block-tab-false-STAYS" className="_3hmsj">
                             <span className="_1ea7qej" data-text="true">宿泊先</span>
                         </label>
-                        <label for="search-block-tab-false-EXPERIENCES" className="_3hmsj">
+                        <label htmlFor="search-block-tab-false-EXPERIENCES" className="_3hmsj">
                             <span className="_1ea7qej" data-text="true">体験</span>
                         </label><a className="_1gwzhbum" href="/s/experiences/online">オンライン体験</a>
-                        <label className="_n3o7pji" for="bigsearch-query-detached-query">ロケーション</label>
+                        <label className="_n3o7pji" htmlFor="bigsearch-query-detached-query">ロケーション</label>
                         <span id="Koan-query__description" className="_krjbj">おすすめの結果を表示するには次に進んでください</span>
                         <div className="_wtz1co">チェックイン</div>
                         <div className="_uh2dzp">日付を追加</div>
