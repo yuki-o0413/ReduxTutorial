@@ -18,7 +18,8 @@ export default function Content(props) {
             />
             <button type="button"
                 className="btn btn-outline-success"
-                onClick={() => props.onSaveItem()} >
+                onClick={(e) => {props.onSaveItem();console.log(e)}}
+                >
                 SAVE
             </button>
         </>
@@ -26,22 +27,27 @@ export default function Content(props) {
 }
 
 function Form(props) {
+
     return (
-        <div className="form-group">
-            <label className="pt-2">ID</label>
-            <input id="1"
-                type="text"
-                className="form-control"
-                value={props.id}
-                onChange={(e) => props.onChangeId(e)}
-            />
-            <label className="pt-2">Name</label>
-            <input id="2"
-                type="text"
-                className="form-control"
-                value={props.name}
-                onChange={(e) => props.onChangeName(e)}
-            />
-        </div>
+        <form>
+            <div className="form-group">
+                <label className="pt-2">ID</label>
+                <input id="1"
+                    type="text"
+                    className="form-control"
+                    value={props.id}
+                    onChange={(e) => props.onChangeId(e)}
+                />
+                <label className="pt-2">Name</label>
+                <input id="2"
+                    type="text"
+                    className="form-control"
+                    value={props.name}
+                    onChange={
+                        (e) => props.onChangeName(e)
+                    }
+                />
+            </div>
+        </form>
     )
 }
