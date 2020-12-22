@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Aside from './components/Aside';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Top from './components/Top';
@@ -36,6 +37,7 @@ class App extends Component {
 
         return (
             <div className="content">
+                <Aside />
                 <Header />
                     sample site
                 {/* <div className="row">
