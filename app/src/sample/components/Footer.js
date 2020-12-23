@@ -12,28 +12,28 @@ export default function Footer(props) {
                             <h4 className="_tfslnm">企業情報</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
-                                    <a href="/d/howairbnbworks" className="_o06542u">Airbnbのご利用方法</a>
+                                    <a href="#" className="_o06542u">YOJIのご利用方法</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/press/news" className="_o06542u">ニュースルーム</a>
+                                    <a href="#" className="_o06542u">ニュースルーム</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/plus" className="_o06542u">Airbnb Plus</a>
+                                    <a href="#" className="_o06542u">YOJI Plus</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/luxury" className="_o06542u">Airbnb Luxe</a>
+                                    <a href="#" className="_o06542u">YOJI Luxe</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a rel="noopener noreferrer" target="_blank" href="https://www.hoteltonight.com/?utm_source_name=Airbnb&amp;utm_campaign_name=Dr_Us_Desktop_Airbnb_Footer" className="_o06542u">HotelTonight</a>
+                                    <a rel="noopener noreferrer" target="_blank" href="#" className="_o06542u">HotelTonight</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/work?s=footer" className="_o06542u">Airbnbビジネスプログラム</a>
+                                    <a href="#" className="_o06542u">YOJIビジネスプログラム</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/d/olympics" className="_o06542u">オリンピック</a>
+                                    <a href="#" className="_o06542u">オリンピック</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/careers" className="_o06542u">採用情報</a>
+                                    <a href="#" className="_o06542u">採用情報</a>
                                 </li>
                             </ul>
                         </section>
@@ -41,16 +41,16 @@ export default function Footer(props) {
                             <h4 className="_tfslnm">コミュニティ</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
-                                    <a href="/diversity" className="_o06542u">ダイバーシティ＆ビロンギング</a>
+                                    <a href="#" className="_o06542u">ダイバーシティ＆ビロンギング</a>
                                 </li>
                                 <li className="_wmuyow">
                                     <a href="/accessibility" className="_o06542u">アクセシビリティ対応</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/invite?r=6" className="_o06542u">お友達を招待</a>
+                                    <a href="#" className="_o06542u">お友達を招待</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="https://www.airbnb.org?locale=ja" className="_o06542u">Airbnb.org</a>
+                                    <a href="#" className="_o06542u">YOJI.org</a>
                                 </li>
                             </ul>
                         </section>
@@ -58,22 +58,22 @@ export default function Footer(props) {
                             <h4 className="_tfslnm">ホスト</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
-                                    <a href="/host/homes?from_footer=1" className="_o06542u">お部屋を掲載</a>
+                                    <a href="#" className="_o06542u">お部屋を掲載</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/d/onlinehost" className="_o06542u">オンライン体験をホストする</a>
+                                    <a href="#" className="_o06542u">オンライン体験をホストする</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/host/experiences" className="_o06542u">体験をホストする</a>
+                                    <a href="#" className="_o06542u">体験をホストする</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/help/responsible-hosting" className="_o06542u">責任あるホスティング</a>
+                                    <a href="#" className="_o06542u">責任あるホスティング</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/resources" className="_o06542u">リソースセンター</a>
+                                    <a href="#" className="_o06542u">リソースセンター</a>
                                 </li>
                                 <li className="_wmuyow">
-                                    <a href="/help/community?s=footer" className="_o06542u">コミュニティセンター</a>
+                                    <a href="#" className="_o06542u">コミュニティセンター</a>
                                 </li>
                             </ul>
                         </section>
@@ -81,7 +81,7 @@ export default function Footer(props) {
                             <h4 className="_tfslnm">サポート</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
-                                    <a href="/d/covidsafety" className="_o06542u">Airbnbの新型コロナウイルスに対する取り組み</a>
+                                    <a href="/d/covidsafety" className="_o06542u">YOJIの新型コロナウイルスに対する取り組み</a>
                                 </li>
                                 <li className="_wmuyow">
                                     <a href="/help?from=footer" className="_o06542u">ヘルプセンター</a>
@@ -117,13 +117,13 @@ export default function Footer(props) {
                                 <div className="_2ms5qb">
                                     <ul className="_115qwnm">
                                         <li className="_kdkpwk">
-                                            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/AirbnbJapan" className="_s7cvp1u"></a>
+                                            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/YOJIJapan" className="_s7cvp1u"></a>
                                         </li>
                                         <li className="_kdkpwk">
-                                            <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/airbnb_jp" className="_s7cvp1u"></a>
+                                            <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/YOJI_jp" className="_s7cvp1u"></a>
                                         </li>
                                         <li className="_kdkpwk">
-                                            <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/airbnb" className="_s7cvp1u"></a>
+                                            <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/YOJI" className="_s7cvp1u"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -131,7 +131,7 @@ export default function Footer(props) {
                             <div className="_zyu73r">
                                 <div className="_pd8gea">
                                     <div className="_9q359r">
-                                        <div className="_1br4kkl" dir="ltr">© 2020 Yoji, Inc. All rights reserved</div>
+                                        <div className="_1br4kkl" dir="ltr">© 2020 YOJI, Inc. All rights reserved</div>
                                         <div className="_opoa3c">
                                             <a href="/terms/privacy_policy" className="_o06542u">プライバシー</a>
                                             <span className="_10wqwyj" aria-hidden="true">·</span>
