@@ -4,10 +4,11 @@ h1 {
 }
 element.style {
   --background-color-hex: #000000;
-  --text-color-hex: #DDDDDD;
+  --text-color-hex: #dddddd;
 }
 body {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 1.43;
   color: #484848;
@@ -17,10 +18,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+element.style {
+  position: absolute;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+._dae4t6 {
+  height: 800px !important;
+  width: 100% !important;
+  /* コンテナのサイズに収める */
+  /* object-fit: contain; */
+  /* width: 100%; */
+  /* 縦横比を固定 */
+  /* object-fit: cover; */
+  /* 中央下を表示 */
+  /* object-position: 50% 100% */
+}
 
 /* テーブルのCSS */
-.table th, .table td{
+.table th,
+.table td {
   border: solid 1px;
   padding: 1px 15px;
 }
@@ -34,19 +51,30 @@ body {
   white-space: nowrap !important;
 }
 ._1us6f63 {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    text-align: center !important;
-    /* positionプロパティは、ボックスの配置方法（基準位置）が、相対位置か絶対位置かを指定する際に使用 */
-    position: relative !important;
-    background-color:#000000;
-    color: #DDDDDD;
-    font-size: 14px !important;
-    line-height: 18px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  text-align: center !important;
+  /* positionプロパティは、ボックスの配置方法（基準位置）が、相対位置か絶対位置かを指定する際に使用 */
+  position: relative !important;
+  background-color: #000000;
+  color: #dddddd;
+  font-size: 14px !important;
+  line-height: 18px !important;
 }
-
+._1ea7qej {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  /* cursor: pointer !important; */
+  display: inline-block !important;
+  font-weight: 400 !important;
+  padding: 10px 12px !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  text-align: center !important;
+  z-index: 0 !important;
+  color: #ffffff !important;
+}
 
 /* ._dae4t6{
   flex: 1
 } */
-
