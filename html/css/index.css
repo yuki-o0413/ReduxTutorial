@@ -18,23 +18,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-element.style {
-  position: absolute;
-  object-fit: cover;
-  vertical-align: bottom;
-}
-._dae4t6 {
-  height: 800px !important;
-  width: 100% !important;
-  /* コンテナのサイズに収める */
-  /* object-fit: contain; */
-  /* width: 100%; */
-  /* 縦横比を固定 */
-  /* object-fit: cover; */
-  /* 中央下を表示 */
-  /* object-position: 50% 100% */
-}
-
 /* テーブルのCSS */
 .table th,
 .table td {
@@ -61,10 +44,53 @@ element.style {
   font-size: 14px !important;
   line-height: 18px !important;
 }
+
+/* Header位置関係 */
+._otdka {
+  position: relative;
+}
+._otdka .onImg {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+/*イメージ*/
+._17fy1ix {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  height: 80px !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+}
+._dae4t6 {
+  /* position: absolute;
+  object-fit: cover;
+  vertical-align: bottom; */
+  height: 800px !important;
+  width: 100% !important;
+  /* コンテナのサイズに収める */
+  /* object-fit: contain; */
+  /* width: 100%; */
+  /* 縦横比を固定 */
+  /* object-fit: cover; */
+  /* 中央下を表示 */
+  /* object-position: 50% 100% */
+}
+/*header文字*/
 ._1ea7qej {
   font-size: 16px !important;
   line-height: 20px !important;
-  /* cursor: pointer !important; */
+  cursor: pointer !important;
   display: inline-block !important;
   font-weight: 400 !important;
   padding: 10px 12px !important;
@@ -72,7 +98,42 @@ element.style {
   position: relative !important;
   text-align: center !important;
   z-index: 0 !important;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
+}
+._1gwzhbum {
+  outline: none !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  font-weight: 400 !important;
+  padding: 10px 12px !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  text-align: center !important;
+  z-index: 0 !important;
+  color: #FFFFFF !important;
+}
+._1keztfl {
+  width: 100%;
+  margin: 0 auto !important;
+  max-width: 850px !important;
+}
+._17fy1ix {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  height: 80px !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
 }
 
 /* ._dae4t6{
