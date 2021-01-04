@@ -6,9 +6,10 @@ export default function Footer(props) {
     return (
         <>
             <footer role="contentinfo" className="_1tywmry" data-reactroot="">
+                <hr/>
                 <div className="_1s94zl78">
-                    <div className="_fyxf74">
-                        <section className="_1l3ys1i">
+                    <div className="row _fyxf74">
+                        <section className="col-sm _1l3ys1i">
                             <h4 className="_tfslnm">企業情報</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
@@ -37,7 +38,7 @@ export default function Footer(props) {
                                 </li>
                             </ul>
                         </section>
-                        <section className="_1l3ys1i">
+                        <section className="col-sm _1l3ys1i">
                             <h4 className="_tfslnm">コミュニティ</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
@@ -54,7 +55,7 @@ export default function Footer(props) {
                                 </li>
                             </ul>
                         </section>
-                        <section className="_1l3ys1i">
+                        <section className="col-sm _1l3ys1i">
                             <h4 className="_tfslnm">ホスト</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
@@ -77,7 +78,7 @@ export default function Footer(props) {
                                 </li>
                             </ul>
                         </section>
-                        <section className="_1l3ys1i">
+                        <section className="col-sm _1l3ys1i">
                             <h4 className="_tfslnm">サポート</h4>
                             <ul className="_yuolfv">
                                 <li className="_wmuyow">
@@ -98,6 +99,7 @@ export default function Footer(props) {
                             </ul>
                         </section>
                     </div>
+                    <hr/>
                     <div className="_1wsqynx">
                         <section className="_1tu1axq">
                             <div className="_1m14l43">
