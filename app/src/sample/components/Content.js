@@ -3,6 +3,8 @@ import React,{ useState } from 'react';
 import { createStore } from "redux";
 
 export default function Content(props) {
+    //NAME３文字以上ででsaveボタン押せるようにdisabledを入れる
+    const [checkName, setCheckName] = useState(true);
     // const ids = props.formItem.id;
     // const names = props.formItem.name;
     // console.log(props.formItem.id["list"])
@@ -15,10 +17,12 @@ export default function Content(props) {
             <Form
                 onChangeId={props.onChangeId}
                 onChangeName={props.onChangeName}
+                setCheckName={setCheckName}
             />
             <button type="button"
                 className="btn btn-outline-success"
                 onClick={(e) => {props.onSaveItem();console.log(e)}}
+                disabled = {checkName}
                 >
                 SAVE
             </button>
@@ -32,19 +36,25 @@ function Form(props) {
         <form>
             <div className="form-group">
                 <label className="pt-2">ID</label>
-                <input id="1"
+                <input id="id"
                     type="text"
                     className="form-control"
                     value={props.id}
                     onChange={(e) => props.onChangeId(e)}
                 />
                 <label className="pt-2">Name</label>
-                <input id="2"
+                <input id="name"
                     type="text"
                     className="form-control"
                     value={props.name}
                     onChange={
-                        (e) => props.onChangeName(e)
+                        (e) =>
+                        {
+                            if (e.target.value.length >= 3){
+                                props.setCheckName(false)
+                                {props.onChangeName(e)}
+                            }
+                        }
                     }
                 />
             </div>
