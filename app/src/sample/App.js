@@ -35,6 +35,9 @@ class App extends Component {
 		const contentHandler = ({onChangeId, onChangeName, onSaveItem}) => ({ onChangeId, onChangeName, onSaveItem })
         console.log('App.render:', this.props);
 
+        //NAME３文字以上ででsaveボタン押せるようにdisabledを入れる
+        const checkName = this.props.name.length >=3;
+
         return (
             <div className="content">
                 <Aside />
@@ -51,7 +54,8 @@ class App extends Component {
                 <br />
                 <br />
                 <div className="container">
-                    <Content formItem={formItem} {...contentHandler(this)} />
+                    <Content formItem={formItem} {...contentHandler(this)}
+                    checkName={checkName} />
                 </div>
                 <br />
                 <br />
