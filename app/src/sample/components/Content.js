@@ -22,8 +22,8 @@ export default function Content(props) {
         <>
             <p>content</p>
             <Form
-                id = {props.id}
-                name = {props.name}
+                in={props.id}
+                name={props.name}
                 onChangeId={props.onChangeId}
                 onChangeName={props.onChangeName}
             />

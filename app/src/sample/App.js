@@ -30,9 +30,12 @@ class App extends Component {
     }
 
     render() {
-        const formItem = this.props
+        // const formItem = this.props
+        const id = this.props.id;
+        const name = this.props.name;
+
         // formEvent
-		const contentHandler = ({onChangeId, onChangeName, onSaveItem}) => ({ onChangeId, onChangeName, onSaveItem })
+		// const contentHandler = ({onChangeId, onChangeName, onSaveItem}) => ({ onChangeId, onChangeName, onSaveItem })
         console.log('App.render:', this.props);
 
         //NAME３文字以上ででsaveボタン押せるようにdisabledを入れる
@@ -54,8 +57,15 @@ class App extends Component {
                 <br />
                 <br />
                 <div className="container">
-                    <Content formItem={formItem} {...contentHandler(this)}
-                    checkName={checkName} />
+                    <Content
+                        id={id}
+                        name={name}
+                        // {...contentHandler(this)}
+                        onChangeId={this.onChangeId}
+                        onChangeName={this.onChangeName}
+                        onSaveItem={this.onSaveItem}
+                        checkName={checkName}
+                    />
                 </div>
                 <br />
                 <br />
