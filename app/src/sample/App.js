@@ -11,8 +11,22 @@ import List from './components/List';
 class App extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            id: [],
+            name: [], // 変更
+        };
     }
-
+    componentDidMount() { // 追加
+        const id = 4
+        const name = "shiro"
+        this.props.didMnt(id,name);
+    }
+    addReg(id,name) {
+        this.setState({
+            id: [this.state.id,id],
+            name: [this.state.name,name]
+        });
+    }
     // formId
     onChangeId = (e) => {
         console.log(e.target.value)
@@ -28,10 +42,6 @@ class App extends Component {
         console.log(this.props)
         console.log("SAVE_ID: ",this.props.id);
         console.log("SAVE_NAME: ",this.props.name);
-    }
-    componentDidMount() {
-        const id = 1
-        const name = "NameName"
     }
 
     render() {
@@ -52,7 +62,6 @@ class App extends Component {
                 <Header />
                     sample site
                 {/* <div className="row">
-
                     <div className="col-5">
                         <p>test</p>
                     </div>
@@ -72,6 +81,7 @@ class App extends Component {
                         onChangeName={this.onChangeName}
                         onSaveItem={this.onSaveItem}
                         checkName={checkName}
+                        onAddReg={(id,name)=>this.addReg(id,name)}
                     />
                 </div>
                 <Footer />

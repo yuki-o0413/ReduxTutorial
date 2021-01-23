@@ -11,7 +11,6 @@ import { createStore } from "redux";
 //     border-radius: 3px;
 //     border: 1px solid #efefef;
 // `
-
 export default function Content(props) {
     console.log(props)
     return (
@@ -22,6 +21,7 @@ export default function Content(props) {
                 name={props.name}
                 onChangeId={props.onChangeId}
                 onChangeName={props.onChangeName}
+                // onAddReg={props.onAddReg()}
             />
             <button type="button"
                 className="btn btn-outline-success"
