@@ -7,6 +7,7 @@ import Top from './components/Top';
 import Content from './components/Content';
 import List from './components/List';
 
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -58,7 +59,11 @@ class App extends Component {
                 </div> */}
                 <Top />
                 <div id="register">
-                    <List />
+                    <List
+                    // id={props.id}
+                    // name={props.name}
+                    // onSaveItem={this.onSaveItem()}
+                    />
                     <Content
                         id={id}
                         name={name}

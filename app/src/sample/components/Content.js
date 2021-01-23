@@ -1,5 +1,6 @@
 'use strict';
 import React,{ useState } from 'react';
+// import List from './components/List';
 import { createStore } from "redux";
 // import styled from 'styled-components';
 
@@ -12,17 +13,12 @@ import { createStore } from "redux";
 // `
 
 export default function Content(props) {
-
-    // const ids = props.formItem.id;
-    // const names = props.formItem.name;
-    // console.log(props.formItem.id["list"])
-    // const ids = props.formItem.id;
     console.log(props)
     return (
         <>
             <p>content</p>
             <Form
-                in={props.id}
+                id={props.id}
                 name={props.name}
                 onChangeId={props.onChangeId}
                 onChangeName={props.onChangeName}
