@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Top from './components/Top';
 import Content from './components/Content';
-
+import List from './components/List';
 
 class App extends Component {
     constructor(props) {
@@ -28,6 +28,10 @@ class App extends Component {
         console.log("SAVE_ID: ",this.props.id);
         console.log("SAVE_NAME: ",this.props.name);
     }
+    componentDidMount() {
+        const id = 1
+        const name = "NameName"
+    }
 
     render() {
         // const formItem = this.props
@@ -42,7 +46,7 @@ class App extends Component {
         const checkName = this.props.name.length >=3;
 
         return (
-            <div className="content">
+            <>
                 <Aside />
                 <Header />
                     sample site
@@ -53,10 +57,8 @@ class App extends Component {
                     </div>
                 </div> */}
                 <Top />
-                <br />
-                <br />
-                <br />
-                <div className="container">
+                <div id="register">
+                    <List />
                     <Content
                         id={id}
                         name={name}
@@ -67,11 +69,8 @@ class App extends Component {
                         checkName={checkName}
                     />
                 </div>
-                <br />
-                <br />
-                <br />
                 <Footer />
-            </div>
+            </>
         );
     }
 }
