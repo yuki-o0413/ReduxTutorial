@@ -1,21 +1,21 @@
 'use strict';
 import React,{ useState } from 'react';
 
-export default function List(props) {
+export default function List({regs}) {
   // 変数を定義
   const no = [];
   const ids = [];
   const names = [];
   const pvs = [];
   // ループでテーブルに順に入れ込むためのコード
-  for (  let i = 1;  i <= 5;  i++  ) {
+  for (  let i = 1;  i <= regs.length;  i++  ) {
     // no.push(i)
     // ids.push(props.id)
     // names.push(props.name)
     // pvs.push(Math.floor( Math.random() * 1000 ))
     no.push(i)
-    ids.push(i)
-    names.push("name" + i)
+    ids.push(regs.id)
+    names.push(regs.name)
     pvs.push(Math.floor( Math.random() * 1000 ))
   }
   // ボディのテーブルに入れ込むための変数用意
@@ -25,7 +25,7 @@ export default function List(props) {
       // このkeyがポイント！
       //https://ja.reactjs.org/docs/lists-and-keys.html
       <tr key={index}>
-        <th scope="col">{no}</th><td>{ids[index]}</td><td>{ names[index] }</td><td>{pvs[index]}</td>
+        <th scope="col">{no}</th><td>{ids[index]}</td><td>{names[index]}</td><td>{pvs[index]}</td>
       </tr>
     );
   });

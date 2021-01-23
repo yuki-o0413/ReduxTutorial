@@ -4,14 +4,6 @@ import React,{ useState } from 'react';
 import { createStore } from "redux";
 // import styled from 'styled-components';
 
-// const FormContainer = styled.form`
-//     color: #757575;
-//     font-size: 14px;
-//     font-weight: bold;
-//     border-radius: 3px;
-//     border: 1px solid #efefef;
-// `
-
 export default function Content(props) {
     console.log(props)
     return (
@@ -35,8 +27,21 @@ export default function Content(props) {
 }
 
 function Form(props) {
+    const [text, setText] = useState('');
+
+    const submitForm = (e) => {
+        e.preventDefault();
+        onAddReg(props.id, props.name);
+    }
+    // const FormContainer = styled.form`
+    //     color: #757575;
+    //     font-size: 14px;
+    //     font-weight: bold;
+    //     border-radius: 3px;
+    //     border: 1px solid #efefef;
+    // `
     return (
-        <form>
+        <form onSubmit={submitForm}>
             <div className="form-group">
                 <label className="pt-2">ID</label>
                 <input id="id"
