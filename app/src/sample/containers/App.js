@@ -18,12 +18,12 @@ const mapStateToProps = state => {
     const  {id,name} = state;
     return {id,name}
 }
-
+console.log(actions)
 const mapDispatchToProps = dispatch => {
     return {
-        updateFormId: (id) => dispatch(actions.updateFormId(id)),
-        updateFormName: (name) => dispatch(actions.updateFormName(name)),
-        didMnt: (test) => dispatch(actions.didMnt(test)),
+        // updateFormId: (id) => dispatch(actions.updateFormId(id)),
+        // updateFormName: (name) => dispatch(actions.updateFormName(name)),
+        didMnt: (id,name) => dispatch(actions.didMnt(id,name)),
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(App)

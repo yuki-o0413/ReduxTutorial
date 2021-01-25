@@ -11,21 +11,12 @@ import List from './components/List';
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            id: [],
-            name: [], // 変更
-        };
     }
     componentDidMount() { // 追加
         const id = 4
         const name = "shiro"
         this.props.didMnt(id,name);
-    }
-    addReg(id,name) {
-        this.setState({
-            id: [this.state.id,id],
-            name: [this.state.name,name]
-        });
+        console.log(this.props)
     }
     // formId
     onChangeId = (e) => {
