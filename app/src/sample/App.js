@@ -13,8 +13,8 @@ class App extends Component {
         super(props);
     }
     componentDidMount() { // 追加
-        const id = 4
-        const name = "shiro"
+        const id = "nuber99"
+        const name = "テスト太郎"
         this.props.didMnt(id,name);
         console.log(this.props)
     }

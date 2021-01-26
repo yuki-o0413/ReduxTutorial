@@ -6,9 +6,6 @@ export default function Top(props) {
     console.log("**********");
     console.log("**********");
     console.log("**********");
-    console.log("**********");
-    console.log("**********");
-    console.log("**********");
     // console.log(props)
 
     return (

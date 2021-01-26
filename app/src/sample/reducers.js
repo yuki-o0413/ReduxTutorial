@@ -5,7 +5,7 @@ export function id(state = initialStateId, action) {
     console.log(action);
     let newState = JSON.parse(JSON.stringify(state));
     switch (action.type) {
-        case 'UPDATE_ID':
+        case 'DID_MOUNT':
             newState = action.payload.id;
             break;
         default:
@@ -20,7 +20,7 @@ export function name(state = initialStateName, action) {
     console.log(action);
     let newState = JSON.parse(JSON.stringify(state));
     switch (action.type) {
-        case 'UPDATE_NAME':
+        case 'DID_MOUNT':
             newState = action.payload.name;
             break;
         default:
