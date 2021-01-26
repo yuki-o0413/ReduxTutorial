@@ -8,7 +8,7 @@ export default function List(props) {
   const names = [];
   const pvs = [];
   // ループでテーブルに順に入れ込むためのコード
-  for (  let i = 1;  i <= 5;  i++  ) {
+  for (  let i = 1;  i <= 3;  i++  ) {
     // no.push(i)
     // ids.push(props.id)
     // names.push(props.name)
