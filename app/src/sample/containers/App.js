@@ -15,8 +15,8 @@ import App from '../App';
 // }
 // export default connect(mapStateToProps, mapDispatchToProps)(App)
 const mapStateToProps = state => {
-    const  {id,name} = state;
-    return {id,name}
+    const  {register} = state;
+    return {register}
 }
 const mapDispatchToProps = dispatch => {
     return {

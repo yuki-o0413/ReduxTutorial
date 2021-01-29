@@ -21,7 +21,6 @@ export default function Content(props) {
                 name={props.name}
                 onChangeId={props.onChangeId}
                 onChangeName={props.onChangeName}
-                // onAddReg={props.onAddReg()}
             />
             <button type="button"
                 className="btn btn-outline-success"
@@ -43,14 +42,14 @@ function Form(props) {
                     type="text"
                     className="form-control"
                     value={props.id}
-                    onChange={props.onChangeId}
+                    onChange={(e)=>props.onChangeId(e)}
                 />
                 <label className="pt-2">Name</label>
                 <input id="name"
                     type="text"
                     className="form-control"
                     value={props.name}
-                    onChange={props.onChangeName}
+                    onChange={(e)=>props.onChangeName(e)}
                 />
             </div>
         </form>

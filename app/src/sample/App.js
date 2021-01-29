@@ -13,8 +13,8 @@ class App extends Component {
         super(props);
     }
     componentDidMount() { // 追加
-        const id = "nuber99"
-        const name = "テスト太郎"
+        const id = "nobita99"
+        const name = "ドラえもん"
         this.props.didMnt(id,name);
         console.log(this.props)
     }
@@ -31,21 +31,21 @@ class App extends Component {
     // clickSaveButton
     onSaveItem = () => {
         console.log(this.props)
-        console.log("SAVE_ID: ",this.props.id);
-        console.log("SAVE_NAME: ",this.props.name);
+        console.log("SAVE_ID: ",this.props.register.id);
+        console.log("SAVE_NAME: ",this.props.register.name);
     }
 
     render() {
         // const formItem = this.props
-        const id = this.props.id;
-        const name = this.props.name;
+        const id = this.props.register.id;
+        const name = this.props.register.name;
 
         // formEvent
 		// const contentHandler = ({onChangeId, onChangeName, onSaveItem}) => ({ onChangeId, onChangeName, onSaveItem })
         console.log('App.render:', this.props);
 
         //NAME３文字以上ででsaveボタン押せるようにdisabledを入れる
-        const checkName = this.props.name.length >=3;
+        const checkName = this.props.register.name.length >=3;
 
         return (
             <>
@@ -72,7 +72,6 @@ class App extends Component {
                         onChangeName={this.onChangeName}
                         onSaveItem={this.onSaveItem}
                         checkName={checkName}
-                        onAddReg={(id,name)=>this.addReg(id,name)}
                     />
                 </div>
                 <Footer />
