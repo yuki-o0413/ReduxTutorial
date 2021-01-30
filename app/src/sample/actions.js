@@ -13,15 +13,15 @@ export const didMnt = (id,name) => {
     };
 }
 
-export const updateFormId = (id) => {
+export const updateFormId = (value) => {
     return {
         type: 'UPDATE_ID',
-        payload: { id }
+        payload: { value }
     };
 }
-export const updateFormName = (name) => {
+export const updateFormName = (value) => {
     return {
         type: 'UPDATE_NAME',
-        payload: { name }
+        payload: { value }
     };
 }

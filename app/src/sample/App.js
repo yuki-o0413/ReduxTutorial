@@ -45,7 +45,7 @@ class App extends Component {
         console.log('App.render:', this.props);
 
         //NAME３文字以上ででsaveボタン押せるようにdisabledを入れる
-        const checkName = this.props.register.name.length >=3;
+        const checkName = name.length >=3;
 
         return (
             <>
